@@ -4,6 +4,7 @@
 }
 .footer {
     padding-bottom: 30px;
+    background: #000;
 }
 .listItem {
     background: transparent !important;
