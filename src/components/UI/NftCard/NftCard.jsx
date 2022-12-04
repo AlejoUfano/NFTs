@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import img01 from '../../../assets/images/img-01.jpg'
-import ava01 from '../../../assets/images/ava-01.png'
 
 
 const NftCard = ({data}) => {
