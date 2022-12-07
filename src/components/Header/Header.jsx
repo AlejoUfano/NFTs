@@ -25,6 +25,7 @@ const NAV__LINKS = [
 const Header = () => {
 
   const headerRef = useRef(null)
+  const menuRef = useRef(null)
 
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
@@ -40,6 +41,8 @@ const Header = () => {
     }
 
   },[])
+  
+  const toggleMenu = () => menuRef.current.classList.toggle('activeMenu')
 
   return (
     <header className='header' ref={headerRef}>
@@ -53,7 +56,7 @@ const Header = () => {
               NFTs
             </h2>
           </div>
-          <div className='navMenu'>
+          <div className='navMenu' ref={menuRef} onClick={toggleMenu}>
             <ul className='navList'>
               {
                 NAV__LINKS.map((item,index)=> <li className='navItem' key={index}>
@@ -69,7 +72,7 @@ const Header = () => {
               </span>
               <Link to='/wallet'>Connect Wallet</Link>
             </button>
-            <span className="mobileMenu"><i class="ri-menu-line"></i></span>
+            <span className="mobileMenu"><i class="ri-menu-line" onClick={toggleMenu}></i></span>
           </div>
         </div>
       </Container>
