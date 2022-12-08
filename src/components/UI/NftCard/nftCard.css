@@ -1,0 +1,18 @@
+@media only screen and (max-width: 992px) {
+    .nftTitle {
+        font-size: 0.8rem !important;
+    }
+    .creatorInfo h6 {
+        font-size: 0.6rem !important;
+    }
+    .creatorInfo p {
+        font-size: 0.7rem !important;
+    }
+    .bidBtn {
+        padding: 4px 20px !important;
+        font-size: 0.6rem !important;
+    }
+    .historyLink a {
+        font-size: 0.6rem !important;
+    }
+}
