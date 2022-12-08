@@ -21,3 +21,12 @@
 .stepItemContent {
     margin-top: 20px !important;
 }
+@media only screen and (max-width: 992px) {
+    .stepItemContent h5 a {
+        font-size: 1rem;
+    }
+    .singleStepItem p {
+        font-size: 0.8rem;
+        line-height: 25px;
+    }
+}
