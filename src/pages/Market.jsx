@@ -3,9 +3,19 @@ import CommonSection from '../components/UI/CommonSection/CommonSection'
 import { Container, Row, Col } from 'reactstrap'
 import { NFT__DATA } from '../assets/data/data'
 import NftCard from '../components/UI/NftCard/NftCard'
+import '../../src/styles/market.css'
 
 
 const Market = () => {
+  const handleCategory = () => {
+
+  }
+  const handleItems = () => {
+    
+  }
+  const handleSort = () => {
+    
+  }
   return (
     <>
       <CommonSection title='Marketplace'/>
@@ -18,7 +28,7 @@ const Market = () => {
                 <div className="filterLeft d-flex align-items-center gap-5">
 
                   <div className="allCaterogyFilter">
-                    <select>
+                    <select onChange={handleCategory}>
                       <option>All Categories</option>
                       <option value="art">Art</option>
                       <option value="music">Music</option>
@@ -29,7 +39,7 @@ const Market = () => {
                   </div>
 
                   <div className="allCaterogyFilter">
-                    <select>
+                    <select onChange={handleItems}>
                       <option>All Items</option>
                       <option value="single-item">Single Item</option>
                       <option value="bundle">Bundle</option>
@@ -40,7 +50,7 @@ const Market = () => {
 
                 <div className="filterRight">
 
-                  <select>
+                  <select onChange={handleSort}>
                     <option>Sort By</option>
                     <option value="high">High Rate</option>
                     <option value="mid">Mid Rate</option>\
