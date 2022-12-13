@@ -1,0 +1,70 @@
+.singleNftImg {
+    border-radius: 8px;
+}
+.singleNftSeen span i {
+    color: #fff;
+    padding: 5px;
+    background: #000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.singleNftSeen span,
+.singleNftMore span {
+    color: #fff;
+    font-size: 0.8rem;
+}
+.singleNftMore span i {
+    background: #343444;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.creatorImg {
+    width: 40px;
+    height: 40px;
+}
+.nftCreator {
+    background: #343444;
+    padding: 15px;
+    border-radius: 7px;
+    width: 50%;
+}
+.creatorDetail p {
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.creatorDetail h6 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.singleNftBtn {
+    padding: 8px 25px;
+    background: #5142fc;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.singleNftBtn:hover {
+    background: #fff;
+}
+.singleNftBtn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.singleNftBtn:hover a {
+    color: #5142fc;
+}
+.singleNftBtn i {
+    color: #fff;
+}
+.singleNftBtn:hover i {
+    color: #5142fc;
+}
