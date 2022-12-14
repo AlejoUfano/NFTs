@@ -10,7 +10,9 @@ const NftCard = ({data}) => {
     <div className='singleNftCard'>
                         
                         <div className="nftImg">
-                            <img src={data.imgUrl} alt="" className='w-100' />
+                            <Link to={`/details/${data.id}`}>
+                                <img src={data.imgUrl} alt="" className='w-100' />
+                            </Link>
                         </div>
                         
                         <div className="nftContent">
