@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CommonSection from '../components/UI/CommonSection/CommonSection'
 import { Container, Row, Col } from 'reactstrap'
 import { NFT__DATA } from '../assets/data/data'
@@ -7,14 +7,27 @@ import '../../src/styles/market.css'
 
 
 const Market = () => {
+  const [data,setData] = useState(NFT__DATA)
   const handleCategory = () => {
 
   }
   const handleItems = () => {
     
   }
-  const handleSort = () => {
-    
+  // ====== SORTING DATA BY HIGH, MID, LOW RATE ======
+  const handleSort = (e) => {
+    const filterValue = e.target.value
+    if (filterValue === 'high') {
+      const filterData = NFT__DATA.filter(item => item.currentBid >= 6)
+      setData(filterData)
+    }
+    if (filterValue === 'mid') {
+      const filterData = NFT__DATA.filter(item => item.currentBid >= 5.50 && item.currentBid < 6)
+      setData(filterData)
+    } else {
+      const filterData = NFT__DATA.filter(item => item.currentBid >= 4.89 && item.currentBid < 5.50)
+      setData(filterData)
+    }
   }
   return (
     <>
@@ -62,7 +75,7 @@ const Market = () => {
               </div>
             </Col>
             {
-              NFT__DATA.slice(0,8).map(item=>(
+              data?.map(item=>(
                 <Col lg='3' md='4' sm='6' className='mb-4' key={item.id}>
                   <NftCard data={item} />
                 </Col>                
