@@ -1,0 +1,30 @@
+.formInput input,
+.formInput textarea {
+    width: 100%;
+    padding: 7px 25px;
+    color: #fff;
+    font-size: 0.8rem;
+    background: transparent;
+    border: 1px solid rgba(221, 221, 221, 0.2);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.formInput {
+    margin-bottom: 15px;
+}
+.formInput label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.formInput .uploadInput {
+    padding: 40px 25px;
+}
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+    .createItem {
+        margin-top: 15px;
+    }
+}
