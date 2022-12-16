@@ -1,0 +1,28 @@
+.walletItem {
+    background: #343444;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.walletItem span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    display: block;
+    margin: auto;
+}
+.walletItem span i {
+    font-size: 2.5rem;
+}
+.walletItem h5 {
+    color: #fff;
+    margin-top: 15px;
+}
+.walletItem p {
+    font-size: 0.8rem;
+    line-height: 28px;
+}
